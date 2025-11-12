@@ -12,7 +12,7 @@ public class score : MonoBehaviour
     private void OnEnable()
     {
         // listen
-        objectPendeteksiInput.inputEvent += AddScore;
+        // objectPendeteksiInput.inputEvent += AddScore;
     }
     public void AddScore()
     {
@@ -21,6 +21,6 @@ public class score : MonoBehaviour
     private void OnDisable()
     {
       //unlisten
-       objectPendeteksiInput.inputEvent -= AddScore;
+      // objectPendeteksiInput.inputEvent -= AddScore;
     }
 }
