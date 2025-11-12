@@ -1,0 +1,33 @@
+using UnityEngine;
+
+public class KotakGerak : MonoBehaviour
+{
+    public float moveSpeed = 5.0f;
+    public bool isMoveRight = true;
+ 
+    // Update is called once per frame
+    void Update()
+    {
+        if (isMoveRight)
+        {
+            gameObject.transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
+        }
+        else
+        {
+            gameObject.transform.Translate(-moveSpeed * Time.deltaTime, 0, 0);
+        }
+        
+    }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("kotak bertabrakan");
+        if (isMoveRight)
+        {
+            isMoveRight = false;
+        }
+        else
+        {
+            isMoveRight = true;
+        }
+    }
+}
