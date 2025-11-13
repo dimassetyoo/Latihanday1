@@ -7,6 +7,8 @@ TagManager:
   - sasaran
   - Bola
   - Dinding
+  - Kotak
+  - Lantai
   layers:
   - Default
   - TransparentFX

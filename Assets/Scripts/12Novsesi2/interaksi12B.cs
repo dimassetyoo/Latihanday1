@@ -7,8 +7,10 @@ public class interaksi12B : MonoBehaviour
     // digunakan sebagai referensi ke class lain bernama SquareMove12B
     // Tujuannya agar script ini bisa berkomunikasi dengan script SquareMove12B di objek lain
     public int skor;
+    public int nyawa;
     // Variabel public dengan tipe data int dengan nama skor untuk menyimpan jumlah skor pemain
     public TMP_Text TeksSkor;
+    public TMP_Text TeksNyawa;
     // Referensi ke komponen teks TMP_Text (TextMeshPro)
     // Digunakan untuk menampilkan nilai skor di layar
     
